@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Joan', serif;
+  padding: 0;
+}
+
+body {
+  background-color: #e2eeff;
+  text-align: center;
+  margin: 8px;
+}
+
+/* Nav Bar */
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  margin: 0px 2px;
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(53, 31, 70, 0.427);
+  color: #e2eeff;
+}
+
+.topnav a.active {
+  background-color: #382277;
+  color: #e2eeff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .logout{
+  background-color: #c41111;
+  border-radius: 5%;
+  color: #ffffff;
+}
+
+
+/*  */
+
+.content h1 {
+  color: #382277;
+  font-family: "Irish Grover", cursive;
+  font-size: 11vw;
+}
+
+.content p {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+
+.content {
+  width: 50%;
+  margin: 100px auto;
+  margin-bottom: 70px;
+  background-color: rgba(53, 31, 70, 0.427);
+  padding: 20px;
+  box-shadow: 15px 15px;
+}
+
+.mood-tracker table, .stress-tracker table{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+th, td{
+  border: 1px solid;
+  padding: 8px 10px;
+}
+
+.mood-tracker h1, .stress-tracker h1{
+  background-color: #382277;
+  color: #e2eeff;
+  padding: 10px 15px;
+}
+
+/*  */
+
+td.excellent, td.no{
+  background-color: #87dc11;;
+}
+
+td.good, td.low{
+  background-color: #0eb154;;
+}
+
+td.neutral, td.medium{
+  background-color: #fbea00;;
+}
+
+td.poor, td.high{
+  background-color: #ff9d00;;
+}
+
+td.horrible, td.max{
+  background-color: #ff0000;;
+}

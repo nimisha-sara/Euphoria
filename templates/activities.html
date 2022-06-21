@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/activities.css')}}">
+    <link rel="stylesheet" href="/static/css/activities.css">
+    <title>Activities</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="{{ url_for( 'logout' ) }}" class="logout">Logout</a>
+        <a href="#Get_Help">Get Help</a>
+        <a href="{{ url_for( 'activities' ) }}" class="active">Activities</a>
+        <a href="{{ url_for( 'logs' ) }}">Logs</a>
+        <a href="{{ url_for( 'journal' ) }}">Journal</a>
+        <a href="{{ url_for( 'home' ) }}">Home</a>
+    </div>
+    <div class="row">
+
+        <div class="card" style="width: 28vw;">
+            <div class="card-img-top breath"></div>
+            <div class="card-body">
+                <h2 class="card-title">Deep Breathing</h5>
+                    <p class="card-text">
+                        “When you’re stressed or anxious, your breathing tends to be irregular and shallow,” says
+                        Kristoffer Rhoads, a clinical neuropsychologist.
+                        Deep breathing (sometimes called diaphragmatic breathing) is a practice that enables more air to
+                        flow into your body and can help calm your nerves, reducing stress and anxiety. It can also help
+                        you improve your attention span and lower pain levels.
+                    </p>
+                    <button type="button"><a
+                            href="{{ url_for( 'link_redirect' , url='https://www.youtube.com/watch?v=0kz5bCaI_7I' ) }}"
+                            target="_blank" style="text-decoration: none; color: white">Start Activity</a></button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 28vw;">
+            <div class="card-img-top guided-visual"></div>
+            <div class="card-body">
+                <h2 class="card-title">Guided Visualization</h5>
+                    <p class="card-text">
+                        Guided imagery is a relaxation technique that draws on your ability to visualize and daydream.
+                        It’s easy to practice whenever and wherever you are. All you have to do is imagine a peaceful
+                        scene in your mind. It works best if you incorporate as many sensory details as possible: what
+                        you see, hear, feel, smell, and taste. So you’re not just thinking it—you’re living it.
+                    </p>
+                    <button type="button"><a
+                            href="{{ url_for( 'link_redirect' , url='https://www.youtube.com/watch?v=t1rRo6cgM_E' ) }}"
+                            target="_blank" style="text-decoration: none; color: white">Start Activity</a></button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 28vw;">
+            <div class="card-img-top walk_cycle"></div>
+            <div class="card-body">
+                <h2 class="card-title">Walking or Cycling</h5>
+                    <p class="card-text">
+                        Cycling and walking both release our ‘feel-good’ hormones known as endorphins. These hormones
+                        help to relax your mind and make you feel happier. They also give your brain something else to
+                        focus on. This can make you feel calmer and help you to manage intrusive thoughts. Getting
+                        some fresh air leaves you feeling energised, positive and ready to take on whatever life throws
+                        at you.
+                    </p>
+                    <button type="button"><a
+                            href="{{ url_for( 'link_redirect' , url='https://calendar.google.com/calendar/u/0/r' ) }}"
+                            target="_blank" style="text-decoration: none; color: white">Set Reminder</a></button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 28vw;">
+            <div class="card-img-top mind_walk"></div>
+            <div class="card-body">
+                <h2 class="card-title">Mindful Walking</h5>
+                    <p class="card-text">
+                        Just as mindfulness is the practice of bringing your attention to the present moment, mindful
+                        walking is the practice of becoming aware of your surroundings and how your body and mind feel
+                        while moving. Meditation isn’t necessarily about being still. For some people, movement is
+                        helpful for becoming more aware of their bodies and minds, as well as the present moment.
+                    </p>
+                    <button type="button"><a
+                            href="{{ url_for( 'link_redirect' , url='https://www.youtube.com/watch?v=AwbRERIzt6c' ) }}"
+                            target="_blank" style="text-decoration: none; color: white;">Start Activity</a></button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 28vw;">
+            <div class="card-img-top muscle"></div>
+            <div class="card-body">
+                <h2 class="card-title">Progressive Muscle Relaxation</h5>
+                    <p class="card-text">
+                        Progressive muscle relaxation (PMR) is a deep relaxation technique that has been effectively
+                        used to control stress and anxiety. Progressive muscle relaxation is based upon the simple practice of
+                        tensing/tightening, one muscle group at a time followed by a relaxation phase. Doctors have used
+                        progressive muscle relaxation in combination with standard treatments
+                        for symptom relief in a number of conditions.
+                    </p>
+                    <button type="button"><a
+                            href="{{ url_for( 'link_redirect' , url='https://www.youtube.com/watch?v=GZ9PHsbt-m4' ) }}"
+                            target="_blank" style="text-decoration: none; color: white;">Start Activity</a></button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 28vw;">
+            <div class="card-img-top muscle"></div>
+            <div class="card-body">
+                <h2 class="card-title">Progressive Muscle Relaxation</h5>
+                    <p class="card-text">
+                        Progressive muscle relaxation (PMR) is a deep relaxation technique that has been effectively
+                        used to control stress and anxiety. Progressive muscle relaxation is based upon the simple practice of
+                        tensing/tightening, one muscle group at a time followed by a relaxation phase. Doctors have used
+                        progressive muscle relaxation in combination with standard treatments
+                        for symptom relief in a number of conditions.
+                    </p>
+                    <button type="button"><a
+                            href="{{ url_for( 'link_redirect' , url='https://www.youtube.com/watch?v=GZ9PHsbt-m4' ) }}"
+                            target="_blank" style="text-decoration: none; color: white;">Start Activity</a></button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

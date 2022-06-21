@@ -1,0 +1,11 @@
+Flask
+google-auth
+google-auth-oauthlib
+oauthlib
+pathlib
+vendor
+requests
+requests-oauthlib
+# rasa==3.2.1
+# rasa-x -i https://pypi.rasa.com/simple
+./wordcloud-1.8.1-cp39-cp39-win_amd64.whl

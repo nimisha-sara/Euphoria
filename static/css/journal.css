@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Joan', serif;
+}
+
+body {
+  text-align: center;
+  background-color: #e2eeff;
+}
+
+/* Nav Bar */
+
+.topnav {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.topnav a {
+  margin: 0px 2px;
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(53, 31, 70, 0.427);
+  color: #e2eeff;
+}
+
+.topnav a.active {
+  background-color: #382277;
+  color: #e2eeff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .logout {
+  background-color: #c41111;
+  border-radius: 5%;
+  color: #ffffff;
+}
+
+/* ------------------- Journal Form ----------------------- */
+
+#regForm {
+  background-color: #351f466d;
+  margin: 50px auto;
+  padding: 10px 40px 40px 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.tab p {
+  color: #382277;
+  font-weight: 400;
+  font-size: 2vw;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04aa6d;
+}
+
+/* ---box 1--- */
+
+.tab label {
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 10px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+}
+
+.tab input[type="radio"] {
+  display: none;
+}
+
+.tab input[type="radio"]:checked + label {
+  border: solid 3px rgb(13, 144, 237);
+}
+
+.tab .results {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 1.1vw;
+}
+
+.form-title{
+  text-align: left;
+}
+
+
+
+/* next & previous btn */
+
+.next-previous button {
+  padding: 10px 15px;
+  background-color: #382277;
+  color: #e2eeff;
+  cursor: pointer;
+  border-radius: 10%;
+  font-size: 1vw;
+}
+
+.next-previous button.next:hover {
+  background-color: #463578;
+  color: #e2eeff;
+}

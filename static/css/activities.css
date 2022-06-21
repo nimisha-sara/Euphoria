@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Joan", serif;
+}
+
+body {
+  text-align: center;
+  background-color: #e2eeff;
+  margin: 8px;
+}
+
+/* Nav Bar */
+
+.topnav {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.topnav a {
+  margin: 0px 2px;
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #351f466d;
+  color: #e2eeff;
+}
+
+.topnav a.active {
+  background-color: #382277;
+  color: #e2eeff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .logout {
+  background-color: #c41111;
+  border-radius: 5%;
+  color: #ffffff;
+}
+
+/*  */
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 10px 10px;
+  background-color: white;
+}
+
+.card button {
+  padding: 8px;
+  background-color: #382277;
+  color: #e2eeff;
+  font-size: 1.1vw;
+  font-weight: 400;
+  border-radius: 8%;
+}
+
+.card-body {
+  padding: 15px;
+  border-radius: 8%;
+}
+
+.card-img-top {
+  border-radius: 2%;
+  padding: 30%;
+}
+
+.card-img-top.breath{
+    background: url("https://www.healthshots.com/wp-content/uploads/2020/05/deep-breathing-.jpg");
+    background-size: 455px;
+}
+
+.card-img-top.guided-visual{
+  background: url("https://www.pathways.health/wp-content/uploads/2020/05/Canva-Profile-of-a-calm-woman-in-white-cog-brain.jpg");
+  background-size: 455px;
+}
+
+.card-img-top.walk_cycle{
+  background: url('https://etsc.eu/wp-content/uploads/Cover.jpg');
+  background-size: 455px;
+}
+
+.card-img-top.mind_walk{
+  background: url('https://chopra.brightspotcdn.com/28/da/af1763b355a446b4e56dc90eb5c9/walking.jpg');
+  background-size: 490px;
+  background-repeat: no-repeat;
+}
+
+.card-img-top.muscle{
+  background: url('https://verv.com/wp-content/uploads/2020/05/woman_meditation-%E2%80%94-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-e1589464703712.jpg');
+  background-size: 490px;
+  background-repeat: no-repeat;
+}
+.card-title {
+  margin: 2px;
+}

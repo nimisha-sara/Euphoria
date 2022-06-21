@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/static/css/logs.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logs.css')}}">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Journal Logs</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="{{ url_for( 'logout' ) }}" class="logout">Logout</a>
+        <a href="#Get_Help">Get Help</a>
+        <a href="{{ url_for( 'activities' ) }}">Activities</a>
+        <a href="{{ url_for( 'logs' ) }}" class="active">Logs</a>
+        <a href="{{ url_for( 'journal' ) }}">Journal</a>
+        <a href="{{ url_for( 'home' ) }}">Home</a>
+    </div>
+    <h1 style="text-align: center;">Your Journal's</h1>
+    <div class="row" style="justify-content: center;">
+        {% for i in range(records | length) %}
+        <div class="col-sm-9">
+            <div class="card" style="margin: 10px 0px;">
+                <div class="card-body">
+                    <h5 id="date" class="card-title">Date: {{ records[i][2] }}</h5>
+                    <p class="card-text">{{ records[i][3][0:100] }}....</p>
+                    <input type="hidden" value="{{ records[i][3] }}" id="entry">
+                    <input type="hidden" value="{{ records[i][5] }}" id="stress">
+                    <input type="hidden" value="{{ records[i][4] }}" id="mood">
+                    <div class="button">
+                        <button type="button" id="event-modal" class="viewMore-btn btn btn-info btn-lg"
+                            data-id="{{ i }}" data-toggle="modal" data-target="#myModal"
+                            style="background-color: #361bac;" name="event-btn">View More</button>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog" style="color: black;">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content"
+                            style="background-color:rgba(255, 255, 255, 1);border: 5px solid rgba(1, 83, 82, 1);">
+                            <div class="modal-header">
+                                <h4 id="date_data" class="modal-title"></h4>
+                            </div>
+                            <div class="modal-body" style="text-align:center;">
+                                <span>Mood Rating: <h6 id="mood_data"></h6></span>
+                                <span>Stress Rating: <h6 id="stress_data"></h6></span><br>
+                                <p id="entry_data"></p>
+                                <!-- <img src="{{url_for('static', filename='cloud.png')}}" alt="word_cloud"> -->
+                                <!-- <form action="" method="post">
+                                    <input type="text" value="" name="log_id" id="log-id" hidden><br>
+                                    <input type="bu" value="DONE" style="margin:10px; font-size:20px;border-radius:10px;color:rgba(1, 83, 82, 1); border: 3px solid rgba(1, 83, 82, 1);">
+                                </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+<script>
+    $(document).on("click", ".viewMore-btn", function () {
+    let date = document.getElementById("date").textContent;
+    let entry = document.getElementById("entry").value;
+    let mood = document.getElementById("mood").value;
+    let stress = document.getElementById("stress").value;
+
+     document.getElementById("date_data").innerHTML = date;
+     document.getElementById("entry_data").innerHTML = entry;
+     document.getElementById("mood_data").innerHTML = mood;
+     document.getElementById("stress_data").innerHTML = stress;
+});
+</script>
+</html>
