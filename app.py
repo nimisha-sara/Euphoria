@@ -15,10 +15,10 @@ import jounal
 
 
 app = Flask(__name__)
-app.secret_key = "Hooman.com"
+app.secret_key = " "
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
-GOOGLE_CLIENT_ID = "620374846872-siep3q491qmg7a1un7f9uok142e6gktk.apps.googleusercontent.com"
+GOOGLE_CLIENT_ID = " "
 client_secrets_file = os.path.join(
     pathlib.Path(__file__).parent, "client_secret.json")
 
