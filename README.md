@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Mental health is a major problem in the United States, as evidenced by terrible statistics. When we consider that the Centers for Disease Control and Prevention (CDC) estimates that one in every five adults suffers from a mental health illness at some point during the year, it's difficult to dispute that we need to make mental health awareness a higher priority.
 
@@ -64,9 +64,9 @@ Unfortunately, anything related to mental health has a big stigma, which is why 
 
 This project allows its users to keep a daily journal and view thier stress and mood in a year chart. It also gives a list of activities to calm them. A word cloud is further used to visualize their journal.
 
-<img src="images/home.jpg" alt="Logo" width="80" height="80">
-<img src="images/journal.jpg" alt="Logo" width="80" height="80">
-<img src="images/tracker.jpg" alt="Logo" width="80" height="80">
+<img src="images/home.jpg" alt="Logo" width="250" height="150">
+<img src="images/journal.jpg" alt="Logo" width="250" height="150">
+<img src="images/tracker.jpg" alt="Logo" width="250" height="150">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
