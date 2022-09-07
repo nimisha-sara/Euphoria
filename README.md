@@ -64,9 +64,9 @@ Unfortunately, anything related to mental health has a big stigma, which is why 
 
 This project allows its users to keep a daily journal and view thier stress and mood in a year chart. It also gives a list of activities to calm them. A word cloud is further used to visualize their journal.
 
-<img src="images/home.jpg" alt="Logo" width="250" height="150">
-<img src="images/journal.jpg" alt="Logo" width="250" height="150">
-<img src="images/tracker.jpg" alt="Logo" width="250" height="150">
+<img src="images/home.jpg" alt="Logo" width="250" height="150"> <img src="images/journal.jpg" alt="Logo" width="250" height="150"> <img src="images/tracker.jpg" alt="Logo" width="250" height="150">
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
